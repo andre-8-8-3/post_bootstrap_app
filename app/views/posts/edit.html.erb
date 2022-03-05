@@ -1,14 +1,14 @@
-<h1>編集</h1>
-<%= from_with model: @post, local: true do |from| %>
+<%= form_with model: @post, local: true do |form| %>
     <div>
-        <%= from.label :title, "タイトル" %>
-        <%= from.text_field :title %>
+      <%= form.label :title, "タイトル" %>
+      <%= form.text_field :title %>
     </div>
     <div>
-        <%= form.label :content, "内容" %>
-        <%= from.text_field :contet %>
+      <%= form.label :content, "内容" %>
+      <%= form.text_field :content %>
     </div>
     <div>
-        <%= from.submit "送信" %>
+      <%= form.submit "送信" %>
     </div>
 <% end %>
+  
